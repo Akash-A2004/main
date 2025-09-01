@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+            gap: 20px;
+            padding: 20px;
+            background:linear-gradient(white,red) no-repeat;
+            
+        }
+        .demo{
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .color{
+            color: blue;
+            background-color: yellow;
+            border: 2px solid blue;
+            transition: color 1s;
+        }
+        .color:hover{
+            background: palegreen;
+        }
+         .background{
+            background-color: orange;
+            transition: background-color 1s;
+         }
+         .background:hover{
+            background: white;
+         }
+         .width{
+            background-color: blue;
+            color: white;
+            transition: 2s;
+         }
+         .width:hover{
+            width: 150px;
+         }
+         .height{
+            background-color: red;
+            transition: 1s;
+         }
+         .height:hover{
+            height: 150px;
+         }
+        .radius{
+            background-color: green;
+            color: white;
+            transition: 2s;
+        }
+        .radius:hover{
+            border-radius: 50%;
+        }
+        .opacity{
+            background-color: blueviolet;
+            color: white;
+            transition: 5s;
+        }
+        .opacity:hover{
+            background-color: rgb(255, 153, 0);
+            color: black;
+            opacity: 0.9;
+        }
+        .transform{
+            background : rgb(8, 183, 236);
+            transition: 1s;
+        }
+        .transform:hover{
+            transform: scale(1.2) rotate(720deg);
+            border-radius: 10%;
+            background-color: red;
+
+        }
+        .shadow{
+            background: wheat;
+            transition: 1s;
+        }
+        .shadow:hover{
+            box-shadow: 5px 5px 5px black;
+        }
+        .letter{
+            background: white;
+            transition: 1s;
+        }
+        .letter:hover{
+            letter-spacing: 5px;
+            font-size: 20px;
+        }
+        .filter{
+            background: url(https://lipsum.app/random/1600x900) no-repeat center/cover;
+            transition: 1s;
+        }
+        .filter:hover{
+            filter: blur(3px) brightness(1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="demo color">Color</div>
+    <div class="demo background">background</div>
+    <div class="demo width">width</div>
+    <div class="demo height">height</div>
+    <div class="demo radius">Radius</div>
+    <div class="demo opacity">Opacity</div>
+    <div class="demo transform">transform</div>
+    <div class="demo shadow">shadow</div>
+    <div class="demo letter">Letter</div>
+    <div class="demo filter"></div>
+</body>
+</html>
